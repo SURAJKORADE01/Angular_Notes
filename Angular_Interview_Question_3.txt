@@ -1,0 +1,84 @@
+Q.1) What is the difference between Template Driven and Reactive Forms?
+Ans: 
+
+1) In case of Template Driven Form, we do the validation inside HTML file. In case of Reactive Form, we do the validation inside TS file.
+2) Template Driven Form is Fast as compared to Reactive Form.
+3) Reactive Form is more powerful as compared to Template Driven Form.
+4) Template Driven Form is used to simple forms. While Reactive Forms is suitable for complex forms.
+5) Template Driven Forms are hard for unit testing. Reactive forms are easier for unit testing.
+
+Q.2) What are the ways in which we can perform validations in Angular forms?
+Ans: 
+
+There are two ways in which we can perform the validation in Angular form as:
+i) Using Template Driven form -> In this form, we do validation using Angular Directive like required, minLength, maxLength, pattern, etc., in template.
+ii) Using Reactive form -> In this form, we use Validators class methods like Validators.required, Validators.minLength, Validators.maxLength, etc., in the component. 
+
+Q.3) Explain the concept of wildcard routing.
+Ans:
+1) In case of wildcard route, we provide the option if targeted URL is not valid.
+2) The wildcard route is such a route which gets invoked when user specifies the wrong option.
+3) To specify the wildcard route, we use ** operator.
+4) The router will select this route if the requested URL doesn't match any path for the defined routes. This can be used for displaying a "404 Not Found" view or redirecting to a specific view if no match is found.
+5) The wildcard routes should be at the end of routes array.
+
+Q.4) Explain the content of routing.ts file.
+Ans: 
+1) In Angular, the routing.ts file defines the application's route and is used for navigation between components.
+2) In case of routing, we specify our routes inside app-routing.module.ts file.
+3) This file contains below things as:
+i) Imports Statements: Import necessary modules like NgModules, RouterModule and Routes from '@angular/router'.
+ii) Inside that file there is one array named as routes in which we mentioned path and name of desired component.
+iii) The path refers to the part of URL that determines a unique view that should be displayed and component refers to the Angular component that associated with path.
+iv) RouterModule Configuration - UseRouterModule.forRoot(routes) to configure the router for the root module.
+v) Exporting - Export AppRoutingModule to mak it available in the root module.
+
+Q.5) Explain the content of Servies in Angular?
+Ans: 
+1) Services are considered as classes which provide functionalities that can be shared between multiple components.
+2) By using the concept of services our Angular application can connect with the server.
+3) Services contains following things in it:
+i) Imports statements: Import Injectable from @angular/core and necessary dependencies.
+ii) Decorator: To define the class as a service class, use @Injectable decorator. Similarly use the @Injectable decorator to indicate that component and other class has dependencies. Inside the decorator, their is one key known as providedIn which make the service available throughout the app.
+iii) Class definition: Angular only support OOP technique. In case of OOPT we need to write our logic inside the class. class contains two things as characteristics and behavior.
+iv) DI: Services are injected into components or other services via the constructor.
+
+Q.6) How we can use Bootstrap in Angular application?
+Ans:- 
+
+To use Bootstrap in Angular application, first we need to install it. To install the Bootstrap we have to use the command as npm install Bootstrap.
+After this command, Bootstrap gets installed in node_modules folder. From the Bootstrap folder, we have to copy the path of bootstrap.min.css file and paste it into styles array of angular.json file. Similarly we have to copy the path of bootstrap.min.js file and paste it into scripts array of angular.json file.
+
+Q.7) What is mean by inline template and inline css?
+Ans:
+
+Inline Template and Inline CSS is nothing but writing the HTML and CSS content diectly inside the components' Typescript file instead of using separate .html and .css files.
+
+Q.8) What is the difference between ng serve and ng build?
+Ans: 
+ng serve command is for development. It starts the development server and watches for changes. Basically ng serve is for local environment with live-reloading.
+
+ng build command is used for production. It create one folder named as dist which contains static files. ng build prepares the application for deployment.
+
+Q.9) What is mean by lazy loading? And what are the advantages of it over normal loading?
+Ans: 
+1) There are two types of loading in Angular as normal loading and lazy loading.
+2) In case of normal loading, Angular application will load all the modules by default. But in case of lazy loading, our Angular application can load the module on demand.
+3) For lazy loading, our Angular application should be modular in nature i.e. we need to create our project as the modular project.
+4) The most important concepts of application performance are: Response Time and Resource Consumption. 
+5) By using lazy loading, angular application can optimize the response time and resource consumption. 
+6) i.e. lazy loading is a concept where we delay loading of an object until it is needed.
+7) There are many advantages of lazy loading over normal or regular loading
+   i) Separate module can provide separate functionality.
+   ii) We can test our module individually.
+   iii) High performance while starting the project because of minimum initial load.
+   iv) Active the code module by navigating to a route.
+
+Q.10) What is mean by unit testing in Angular?
+Ans: 
+i) Unit Testing is a level of Software testing where individual units/components of a software are tested.
+ii) Purpose of unit testing is to validate that each unit of software performs as designed.
+iii) There are many benefits of unit testing: Improve the design of implementations, allow refactoring, add new features.
+iv) In case of JavaScript/Typescript, we have to test our functions.
+v) Jasmine -> Jasmine is an open source testing framework for JavaScript. It has bunch of functionalities to allow us the write different kinds of tests.
+vi) Karma -> Karma is the task runner for our tests. It uses configuration file in order to set the startup file, the reporters, the testing framework among other things.

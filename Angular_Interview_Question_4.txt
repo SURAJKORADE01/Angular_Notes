@@ -1,0 +1,49 @@
+Q.1) What is the component Decorator in Angular?
+Ans: The component decorator in Angular is defines using @Component which is used to define metadata for an Angular component. The component decorator contains five key value pairs:
+i) selector: "app-root" -> Selector is used to place the component's view inside the parent component's HTML.
+ii) standalone: true -> If the component can function independently without needing to be declared within an Angular module.
+iii) imports: [] -> It contains the list of other components, directive, pipes and modules which are required by this component.
+iv) templateUrl: Specifies the path to the HTML template.
+v) stylesUrl: Specifies the path to the CSS template.
+
+Q.2) What are the types of Compilation in Angular? AOT vs JIT?
+Ans: 
+1) There are two types of Compilation in Angular:
+i) Ahead of Time compilation
+ii) Just In Time compilation
+
+2) Ahead Of Time compilation is a process where Angular TypeScript code is compiled into efficient JavaScript code before browser loads the app i.e. before code is send to the browser.
+3) Just In Time compilation is a process where Angular TypeScript code compiled into efficient JavaScript code in the browser at runtime.
+4) By default, Angular uses the Just In Time compilation during development. But Angular can switch to AOT compilation for production build. This is done when we run the production built command as ng build --prod. 
+5) Difference:
+
+------------------------------------------------------
+Features    |   JIT Compilation    | AOT Compilation
+------------------------------------------------------
+Performance | 	   Slower          |      Faster
+Build Time  |      Faster	   |      Slower
+Bundle Size |      Larger	   |      Smaller
+
+Q.3) What are the metadata properties of NgModule?
+Ans: 
+It is a decorator which accept the metadata from the programmer which informs the angular how to compile the component template and its dependency injection. These properties informs Angular about the components, directives, pipes, services and other features of modules.
+
+Key Properties:
+
+declaration: declare the components, directives and pipes that belongs to module.
+imports: It contains the list of other modules, components, pipes, directive that are needed by that module.
+exports: define the component, pipe and directive that are available to other module.
+providers: used to specify service that module will provide to Angular DI system.
+bootstrap: It specifies the components that will be bootstrapped when application starts.
+
+Q.4) What are the structural directive in Angular?
+Ans: 
+1) Structural Directive are used to change the structure of DOM by adding, by removing and by replacing the HTML elements.
+2) By using the concept of structural directive, we can add partial logic inside the html file of an angular project.
+3) These structural directive are inbuilt so that we can used in our application directly.
+4) ngIf, ngFor, ngSwitch these are the example of structural directive in Angular.
+
+Q.5) What is mean by Template Reference Variable?
+Ans: Template reference variable in Angular is a variable defined in template using # symbol. 
+
+

@@ -1,0 +1,70 @@
+1. What is difference between Angular JS and Angular?
+Ans: 
+1) AngularJS is based on MVC architecture which uses JavaScript as a programming language. Angular is complete component-based framework, which uses TypeScript as a programming language.
+2) AngularJS is slower due to two-way data binding. Angular is faster with improved change detection using Dependency Injection and Ahead of Time compilation.
+3) AngularJS has limited support for mobile. Angular has designed for mobile-first applications.
+4) Angular is a modern, faster and more efficient evolution of AngularJS.
+5) In case of Angular, we use TypeScript as a programming language which support the concept of Data types, Object Oriented Programming, ES6-ES7, Generics which is not available in AngularJS.
+
+2. What is Angular?
+Ans:- 
+1) Angular is a TypeScript-based, open-source Client side web development framework developed by Google. 
+2) It is used to build dynamic, single-page web applications (SPAs) with a component-based architecture. 
+3) Angular offers powerful tools like two-way data binding, dependency injection, routing, and support for RxJS for reactive programming. 
+4) It is designed for performance, scalability, and modern web development.
+
+3. Explain features of Angular?
+Ans:- There are many features of Angular:- 
+1) Component-Based Architecture: Applications are built using modular components. 
+2) Two-Way Data Binding: Synchronizes data between model and view.
+3) Dependency Injection: Provide an efficient way to manage service dependencies across components. 
+4) Directives: Extend HTML functionality with custom elements and behaviors.
+5) Pipe: Transform the data into desired output before displaying.
+6) Routing and Navigation: Built-in Angular for creating single-page application with dynamic navigation.
+7) Ahead-of-Time: Convert templates into optimized JavaScript during build time for better performance.
+8) CLI Tool: Angular CLI simplifies development with commands for testing and building application
+9) Cross-Platform: Enables building desktop and mobile applications. 
+10) Rich Ecosystems: Support forms, HTTP client, animations and extensive third-party libraries.
+
+4. What is String interpolation in Angular?
+Ans: Interpolation refers to embedding any expression into Markup Text. 
+String Interpolation is a way to bind data from the components class to the HTML template using double curly braces. It’s one-way data binding from the component to the view.
+
+6. What are the directives in Angular?
+Ans: Angular Directives are used to extend the power of the HTML by giving it new syntax.
+
+There are three types of directives in Angular:
+1) Components:- Directives with a template. Components are the most common of the three directives.
+2) Structural:- Structural Directive are used to change the structure of DOM by adding, by removing or by replacing DOM elements. Structural Directives change the structure of the view. ngFor, ngSwitch, ngIf are the examples of structural directive.
+3) Attribute Directive: Change the appearance or behavior of an element, component or another directive. Attribute directive are used as attributes of element. The built-in ngStyle directive is the example of Attribute Directive.
+
+
+7. What is material design?
+Ans: 
+i) Angular Material is also called as material design. Material Design is a free and open source front end/ client side library for developing web application.
+ii) It provides HTML and CSS based template for topography, forms, buttons, toolbars, tables.
+iii) We use the concept of Material Design to create our GUI much more better.
+
+8. What is AOT(Ahead Of Time) Compilation?
+Ans:
+AOT (Ahead-of-Time) Compilation in Angular is a process where the Angular HTML and TypeScript code are compiled into efficient JavaScript code before the browser loads the app. 
+This improves performance by reducing runtime compilation, enabling faster rendering, smaller bundle sizes, and early detection of template errors during the build process.
+
+9. What is data binding? How many ways in which it can be done?
+Ans: Data binding is also known as Interpolation. Data binding refers the embedding any expression into the markup text. By using the concept of data binding, we can fetch the data into the html file from the typescript file. To use data binding we have to use {{}} symbol.
+
+There are 5 ways in which we can perform the data binding in Angular:
+
+i) We can perform the mathematical operation.
+ii) We can access characteristics from the typescript file.
+iii) We can access the inbuilt properties.
+iv) We can call the inbuilt methods/functions.
+v) We can call the user-defined methods.
+
+10. What is mean by Pipe in Angular?
+Ans: By using the concept of Pipe, we can transform the data into desired output before displaying i.e. we can transform the data from one form to another form.
+
+There are two types of pipe:
+i) Inbuilt Pipe -> Number, String, JSON, Date, Currency
+ii) Custom Pipe -> Custom Pipe allow us to essentially create pure function which accepts an input and returns difference output via some form of transformation.
+
