@@ -1,17 +1,18 @@
 1. What is difference between Angular JS and Angular?
 Ans: 
 1) AngularJS is based on MVC architecture which uses JavaScript as a programming language. Angular is complete component-based framework, which uses TypeScript as a programming language.
-2) AngularJS is slower due to two-way data binding. Angular is faster with improved change detection using Dependency Injection and Ahead of Time compilation.
+2) AngularJS is Controller architecture where Angular is Component architecture.
 3) AngularJS has limited support for mobile. Angular has designed for mobile-first applications.
-4) Angular is a modern, faster and more efficient evolution of AngularJS.
+4) AngularJS doesn't have support for CLI and Lazy loading where Angular has strong support for CLI and Lazy loading.
 5) In case of Angular, we use TypeScript as a programming language which support the concept of Data types, Object Oriented Programming, ES6-ES7, Generics which is not available in AngularJS.
 
 2. What is Angular?
 Ans:- 
 1) Angular is a TypeScript-based, open-source Client side web development framework developed by Google. 
-2) It is used to build dynamic, single-page web applications (SPAs) with a component-based architecture. 
-3) Angular offers powerful tools like two-way data binding, dependency injection, routing, and support for RxJS for reactive programming. 
-4) It is designed for performance, scalability, and modern web development.
+2) It is used to build dynamic, single-page web applications (SPAs) by using the concept of routing with a component-based architecture.
+3) It is a framework which is used to binds the template i.e. HTML with the TypeScript i.e. ts file It helps to reduce effort on writing lengthy lines of code for binding.
+4) Angular offers powerful tools like two-way data binding, dependency injection, routing, HTTP and support for RxJS for reactive programming. 
+5) It is designed for performance, scalability, and modern web development.
 
 3. Explain features of Angular?
 Ans:- There are many features of Angular:- 
@@ -46,7 +47,7 @@ ii) It provides HTML and CSS based template for topography, forms, buttons, tool
 iii) We use the concept of Material Design to create our GUI much more better.
 
 8. What is AOT(Ahead Of Time) Compilation?
-Ans:
+Ans: 
 AOT (Ahead-of-Time) Compilation in Angular is a process where the Angular HTML and TypeScript code are compiled into efficient JavaScript code before the browser loads the app. 
 This improves performance by reducing runtime compilation, enabling faster rendering, smaller bundle sizes, and early detection of template errors during the build process.
 

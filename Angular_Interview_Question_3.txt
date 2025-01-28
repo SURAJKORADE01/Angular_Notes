@@ -10,6 +10,19 @@ Ans:
 Q.2) What are the ways in which we can perform validations in Angular forms?
 Ans: 
 
+To implement Template-driven forms in Angular:
+
+Import FormsModule in AppModule.
+Use the [(ngModel)] directive for two-way data binding.
+Use the <form> tag with a reference variable.
+Add validation attributes like required.
+
+To implement Reactive forms in Angular:
+
+Import ReactiveFormsModule in AppModule.
+Create a FormGroup and FormControl in the component.
+Bind the form model to the template using formGroup and formControlName.
+
 There are two ways in which we can perform the validation in Angular form as:
 i) Using Template Driven form -> In this form, we do validation using Angular Directive like required, minLength, maxLength, pattern, etc., in template.
 ii) Using Reactive form -> In this form, we use Validators class methods like Validators.required, Validators.minLength, Validators.maxLength, etc., in the component. 
@@ -56,9 +69,9 @@ Inline Template and Inline CSS is nothing but writing the HTML and CSS content d
 
 Q.8) What is the difference between ng serve and ng build?
 Ans: 
-ng serve command is for development. It starts the development server and watches for changes. Basically ng serve is for local environment with live-reloading.
+ng serve command is for development. It starts the development server and watches for changes. Basically ng serve build in memory.
 
-ng build command is used for production. It create one folder named as dist which contains static files. ng build prepares the application for deployment.
+ng build command is used for production. It create one folder named as dist which contains static files. ng build prepares the application for deployment. It build on hard disk
 
 Q.9) What is mean by lazy loading? And what are the advantages of it over normal loading?
 Ans: 
@@ -80,5 +93,9 @@ i) Unit Testing is a level of Software testing where individual units/components
 ii) Purpose of unit testing is to validate that each unit of software performs as designed.
 iii) There are many benefits of unit testing: Improve the design of implementations, allow refactoring, add new features.
 iv) In case of JavaScript/Typescript, we have to test our functions.
-v) Jasmine -> Jasmine is an open source testing framework for JavaScript. It has bunch of functionalities to allow us the write different kinds of tests.
+v) Jasmine -> Jasmine is an open source testing framework for JavaScript. It has bunch of functionalities to allow us the write different kinds of tests. For the testing we use different types of describe, it, expect, matcher
 vi) Karma -> Karma is the task runner for our tests. It uses configuration file in order to set the startup file, the reporters, the testing framework among other things.
+
+
+Overall Validation: Use the form.valid property to check if the entire form is valid.
+Specific Validation: Use the control's valid or errors properties to check individual field validation.

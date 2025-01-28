@@ -25,16 +25,17 @@ It contains one file named as package.json which is standard file. Every node an
 
 It contains one file as angular.json which is standard configuration file of our application.
 
+These are things we need to discuss component, view, module, binding, directives, services, DI
+
 Q.3) What is process called by which typescript code gets converted into javascript code?
 Ans: The process by which typescript code gets converted into javascript code is called as transpilation. To convert the TypeScript file into JavaScript file we use command as: tsc Name_of_File.ts
 In Angular, it is called as Ahead of Time Compilation.
 
 Q.4) What is difference between Observables and Promises?
 Ans: 
-Observables is a feature of RxJS is considered as sequence of data which arrives asynchronously over the time, such as HTTP requests, user inputs or events where Promise is a feature of JavaScript used to handle single asynchronous operation that either resolved or rejected.
-
-Observables executes only when subscribed where Promises start execution immediately.
-Observables can emit multiple values over time where Promises emits a single value and cannot be canceled.
+i) Observables is a feature of RxJS is considered as sequence of data which arrives asynchronously over the time, such as HTTP requests, user inputs or events where Promise is a feature of JavaScript used to handle single asynchronous operation that either resolved or rejected.
+ii) Observables executes only when subscribed where Promises start execution immediately.
+iii) Observables can emit multiple values over time where Promises emits a single value and cannot be canceled.
 
 
 Q.5) Why typescript is used in Angular instead of JavaScript?

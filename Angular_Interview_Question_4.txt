@@ -15,6 +15,9 @@ ii) Just In Time compilation
 2) Ahead Of Time compilation is a process where Angular TypeScript code is compiled into efficient JavaScript code before browser loads the app i.e. before code is send to the browser.
 3) Just In Time compilation is a process where Angular TypeScript code compiled into efficient JavaScript code in the browser at runtime.
 4) By default, Angular uses the Just In Time compilation during development. But Angular can switch to AOT compilation for production build. This is done when we run the production built command as ng build --prod. 
+	
+--prod flag that compresses the JS file, remove comments and make our application for the production.
+
 5) Difference:
 
 ------------------------------------------------------
@@ -44,6 +47,7 @@ Ans:
 4) ngIf, ngFor, ngSwitch these are the example of structural directive in Angular.
 
 Q.5) What is mean by Template Reference Variable?
-Ans: Template reference variable in Angular is a variable defined in template using # symbol. 
+Ans: Template reference variable in Angular is a variable defined in template using # symbol. It provide a reference to DOM element, component or directive allowing to interact with them in the template.
 
-
+Q.6) What is ngOnInit? 
+Ans: They offer expertise in enhancing AI models through high-quality data processing.
